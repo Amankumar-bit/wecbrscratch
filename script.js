@@ -27,6 +27,17 @@ function resetme(){
     
 }
 
+$("#firstupload").click(function(){
+    $("#inputProfile").click();
+ });
+ $("#secondupload").click(function(){
+    $("#inputCollegeLogo").click();
+ });
+
+ $("#thirdupload").click(function(){
+    $("#inputCollegeId").click();
+ });
+
 
 $("#toggleSection").click(function () {
     $("#toggleSection").text("RESEND OTP");

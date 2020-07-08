@@ -135,18 +135,20 @@
                                     <input type="tel" id="inputPhone" class="form-control" placeholder="Phone Number" required autofocus>
                                     <label for="inputPhone">Phone Number</label>
                                 </div>
-                                <div class="upload_file_container">
-                                    <input type="file" name="photo" id="inputPhone"/>
-                                    <label for="inputPhone" id="custom-input">Profile Picture</label>
-                                </div>
                                 <!-- 
                                 <div class="form-label-group">
                                     <input type="file" id="inputProfilePicture" class="form-control"  name="photo" placeholder="Profile Picture" required accept="image/*">
                                     <label for="inputProfilePicture">Browse</label>
                                 </div> -->
 
+
+                                <input type="file" name="photo" id="inputProfile" class="hidden"/>
+                                <div class="upload_file_container" id="firstupload">
+                                    Profile Picture (Upload)
+                                </div>
+
                                 <div class="form-label-group">
-                                    <input type="text" id="inputCollege" class="form-control" placeholder="College Name" required>
+                                    <input type="text" id="inputCollege" class="form-control"  placeholder="College Name" required>
                                     <label for="inputCollege">College Name</label>
                                 </div>
                                 
@@ -155,19 +157,19 @@
                                     <input type="file" id="inputCollegeLogo" class="form-control" placeholder="College Logo" required accept="image/*">
                                     <label for="inputCollegeLogo">College Logo</label>
                                 </div> -->
-
-                                <div class="upload_file_container">
-                                    <input type="file" id="inputCollegeLogo"  placeholder="College Logo" required accept="image/*">
-                                    <label for="inputPhone" id="custom-input">College Logo</label>
+                                
+                                <input type="file" id="inputCollegeLogo"  placeholder="College Logo" class="hidden" required accept="image/*">
+                                   <div class="upload_file_container" id="secondupload">
+                                    College Logo (Upload)
                                 </div>
                                 <!-- 
                                 <div class="form-label-group">
                                     <input type="file" id="inputCollegeId" class="form-control" placeholder="College Identification Proof" required accept="image/*">
                                     <label for="inputCollegeId">College Identification Proof</label>
                                 </div> -->
-                                <div class="upload_file_container">
-                                    <input type="file" id="inputCollegeId"  placeholder="College Identification Proof" required accept="image/*">
-                                    <label for="inputCollegeId" id="custom-input">College Identification Proof</label>
+                                <input type="file" id="inputCollegeId"  placeholder="College Identification Proof" class="hidden" required accept="image/*"> 
+                                <div class="upload_file_container" id="thirdupload">
+                                    College Identification Proof (Upload)
                                 </div>
 
 

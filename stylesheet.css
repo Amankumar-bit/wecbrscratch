@@ -112,6 +112,10 @@ top:-23px;
     scrollbar-width: thin;
     
 }
+
+.hidden{
+    display: none;
+}
 .upload_file_container{
     position: relative;
     top:15px;
@@ -122,11 +126,14 @@ top:-23px;
     height:47px;
     margin:0 auto;
     position:relative;
+    text-align: center;
+    line-height: 15px;
     /* box-shadow:   0 0.5rem 1rem 0 rgba(5, 84, 230, 0.397); */
   border-width: thin;
   border-style: solid ;
   border-color: rgba(128, 128, 128, 0.493);
-    background-color: whitesmoke;
+  font-size:14px;
+  padding-top:3px;
  }
  
 
@@ -137,13 +144,18 @@ top:-23px;
     height:40px;
     position:absolute;
     left:0;
+
     top:0;
     cursor:pointer;
  }
-
+ .upload_file_container input:hover{
+  
+    cursor:pointer;
+ }
  #custom-input{
      margin-left:34% ;
-     margin-top:1%;
+     margin-top:3%;
+    
      color: rgb(97, 95, 95);
  }
 #social-media-icons{
@@ -427,6 +439,15 @@ text-align: center;
        width:100%;
    }
 }
+
+@media(max-width:1050px){
+    #child-child-card1{
+        margin: 0 auto;
+         height:300px;
+         width:300px;
+     }
+}
+
 @media(max-width:990px){
     .master-card{
         height:800px;
@@ -449,7 +470,7 @@ text-align: center;
         #child-child-card1{
            margin: 0 auto;
             height:85%;
-            width:200px;
+            width:220px;
         }
         
         #image{
@@ -461,7 +482,6 @@ text-align: center;
         }
 }
 @media(max-width:800px){
-    
 }
 @media(max-width:600px){
     .master-card{
@@ -480,6 +500,10 @@ text-align: center;
     .form-custom .btn {
         width:90%;
     }
+
+
+  
+
 }
 @media(max-width:480px){
     .form-label-group input {
@@ -491,4 +515,7 @@ text-align: center;
     .form-custom .btn {
         width:99%;
     }
+}
+@media(max-width:400px){
+    
 }
