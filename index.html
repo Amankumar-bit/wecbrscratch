@@ -5,6 +5,8 @@
             Studentpartnerportal
         </title>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
@@ -12,14 +14,201 @@
     <body>
             <div class="master-card">
                 <div id="child-card1">
-                    <div id="image">
-                    </div>
+                    <div id="image"></div>
+                    <div id="child-child-card1"></div>
                 </div>
-                <div id="child-card2"></div>
+                <div id="child-card2">
+                                        
+                
+                        <div id="page1" >
+                            <div class="card-body">
+                                <h5 class="card-title">Sign In</h5>
+                                <form class="form-custom">
+                                    <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                        <label for="inputEmail">Email address</label>
+                                    </div>
+    
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+    
+                                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                                    <hr class="my-4">
+                                    <button class="btn btn-lg btn-red btn-block text-uppercase" type="submit" id="forgotpass" onclick="forgetpass()"> Forgot Password</button>
+                                    <button class="btn btn-lg btn-darkblue btn-block text-uppercase" type="submit" id="register" onclick="regist()" >Register</button>
+                                </form>
+                                <div id="social-media-icons">
+                                    <div id="facebook"></div>
+                                    <div id="instagram"></div>
+                                    <div id="whatsapp"></div>
+                                    <div id="linkden"></div>
+                                    <div id="twitter"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="page2" >
+                            <div class="card-body">
+                                <h5 class="card-title">Reset Password</h5>
+                                <form class="form-custom">
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+    
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Re-Enter Password" required>
+                                        <label for="inputConfirmPassword">Re-Enter Password</label>
+                                    </div>
+    
+                                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" >Reset Password</button>
+    
+                                </form>
+                            </div>
+                            <div id="social-media-icons2">
+                                <div id="facebook"></div>
+                                <div id="instagram"></div>
+                                <div id="whatsapp"></div>
+                                <div id="linkden"></div>
+                                <div id="twitter"></div>
+                            </div>
+                        </div>
+
+
+                        
+                    <div id="page3">
+                        <div class="card-body">
+                            <h5 class="card-title">Forgot Password</h5>
+                            <form class="form-custom">
+                                <div class="form-label-group">
+                                    <input type="tel" id="inputPhone" class="form-control" placeholder="Registered Phone Number" required autofocus>
+                                    <label for="inputPhone">Registered Phone Number</label>
+                                </div>
+                                <div class="form-label-group">
+                                    <input type="text" id="inputOTP" class="form-control" placeholder="Enter OTP" required autofocus>
+                                    <label for="inputOTP">Enter OTP</label>
+                                </div>
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" id="toggleSection" onclick="sendotp()">Send OTP</button>
+                                <button class="btn btn-lg btn-darkblue btn-block text-uppercase" type="submit" id="resetpass" onclick="resetme()"> Reset Password</button>
+                                
+                                <div id="hidden">
+                                    <hr class="my-4">
+                                    
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <div id="social-media-icons3">
+                            <div id="facebook"></div>
+                            <div id="instagram"></div>
+                            <div id="whatsapp"></div>
+                            <div id="linkden"></div>
+                            <div id="twitter"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="card card-custom my-5 cube__face cube__face--left" id="hideCard" >
+                        <div class="card-body">
+                            <h5 class="card-title">Register</h5>
+                            <form class="form-custom">
+                                <div class="form-label-group">
+                                    <input type="text" id="inputFirstname" class="form-control" placeholder="First Name" required>
+                                    <label for="inputFirstname">First Name</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="text" id="inputLastname" class="form-control" placeholder="Last Name" required>
+                                    <label for="inputLastname">Last Name</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                    <label for="inputEmail">Email Address</label>
+                                </div>
+
+                                <div class="form-label-group">
+
+                                    <input type="tel" id="inputPhone" class="form-control" placeholder="Phone Number" required autofocus>
+                                    <label for="inputPhone">Phone Number</label>
+                                </div>
+                                <div class="upload_file_container">
+                                    <input type="file" name="photo" id="inputPhone"/>
+                                    <label for="inputPhone" id="custom-input">Profile Picture</label>
+                                </div>
+                                <!-- 
+                                <div class="form-label-group">
+                                    <input type="file" id="inputProfilePicture" class="form-control"  name="photo" placeholder="Profile Picture" required accept="image/*">
+                                    <label for="inputProfilePicture">Browse</label>
+                                </div> -->
+
+                                <div class="form-label-group">
+                                    <input type="text" id="inputCollege" class="form-control" placeholder="College Name" required>
+                                    <label for="inputCollege">College Name</label>
+                                </div>
+                                
+
+                                <!-- <div class="form-label-group">
+                                    <input type="file" id="inputCollegeLogo" class="form-control" placeholder="College Logo" required accept="image/*">
+                                    <label for="inputCollegeLogo">College Logo</label>
+                                </div> -->
+
+                                <div class="upload_file_container">
+                                    <input type="file" id="inputCollegeLogo"  placeholder="College Logo" required accept="image/*">
+                                    <label for="inputPhone" id="custom-input">College Logo</label>
+                                </div>
+                                <!-- 
+                                <div class="form-label-group">
+                                    <input type="file" id="inputCollegeId" class="form-control" placeholder="College Identification Proof" required accept="image/*">
+                                    <label for="inputCollegeId">College Identification Proof</label>
+                                </div> -->
+                                <div class="upload_file_container">
+                                    <input type="file" id="inputCollegeId"  placeholder="College Identification Proof" required accept="image/*">
+                                    <label for="inputCollegeId" id="custom-input">College Identification Proof</label>
+                                </div>
+
+
+                                <div class="form-label-group">
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                    <label for="inputPassword">Password</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Re-Enter Password" required>
+                                    <label for="inputConfirmPassword">Re-Enter Password</label>
+                                </div>
+
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+                            <br>
+                            <br>
+                            <br>
+                            </form>
+                        </div>
+                        <div id="social-media-icons4">
+                            <div id="facebook"></div>
+                            <div id="instagram"></div>
+                            <div id="whatsapp"></div>
+                            <div id="linkden"></div>
+                            <div id="twitter"></div>
+                        </div>
+                </div>
+
+                    
+
+
+
+
+
+                </div>
                
             </div>
 
-
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
 
     </body>
 </html>
