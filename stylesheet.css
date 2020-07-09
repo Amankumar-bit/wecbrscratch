@@ -128,12 +128,14 @@ top:-23px;
     position:relative;
     text-align: center;
     line-height: 15px;
-    /* box-shadow:   0 0.5rem 1rem 0 rgba(5, 84, 230, 0.397); */
+    box-shadow:   0 0.5rem 1rem 0 rgba(5, 84, 230, 0.397);
   border-width: thin;
   border-style: solid ;
   border-color: rgba(128, 128, 128, 0.493);
   font-size:14px;
   padding-top:3px;
+  background-color: white;
+
  }
  
 
