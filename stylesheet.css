@@ -44,7 +44,7 @@ body{
     
     
     margin:auto;
-    background-color: turquoise;
+    /* background-color: transparent; */
     background-image: url("images/illus1.png");
     background-size: cover;
     height:80%;
