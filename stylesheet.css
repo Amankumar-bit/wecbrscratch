@@ -140,6 +140,13 @@ top:-23px;
 .hidden{
     display: none;
 }
+#upload{
+    margin-top: 3px;
+    font-size:11px;
+    color:#0099ff;
+    /* font-weight: bolder; */
+    
+}
 .upload_file_container{
     position: relative;
     top:15px;
