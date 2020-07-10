@@ -19,7 +19,7 @@ function regist(){
     
 }
 function resetme(){
-    document.getElementById('child-card2').style.transform="rotateY(360deg)";
+    document.getElementById('child-card2').style.transform="rotateY(-1deg)";
     document.getElementById('child-card2').style.transformStyle="preserve-3d";
     document.getElementById('child-card2').style.transition="transform 1.2s";
     document.getElementById("page2").style.display="unset";
