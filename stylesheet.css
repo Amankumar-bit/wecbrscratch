@@ -510,6 +510,10 @@ text-align: center;
 @media(max-width:800px){
 }
 @media(max-width:600px){
+    ::-webkit-scrollbar {
+        width: 1.7px;
+        background:white;
+    }
     .master-card{
         height:800px;
         width:87%;    
